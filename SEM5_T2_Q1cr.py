@@ -1,5 +1,5 @@
 def vogal(letra):
-    # Verifica se é uma vogal maíuscula ou mínuscula
+    # Verifica se é uma vogal ou consoante maíuscula ou mínuscula
     print(letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u' or letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U')
 
 
