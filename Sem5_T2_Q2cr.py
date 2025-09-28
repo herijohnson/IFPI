@@ -1,24 +1,15 @@
 def consoante_e_vogal(letra):
-    # Verifica se é consoante ou vogal
-    print(
-        letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u' or
-        letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U' or
-        letra == 'b' or letra == 'c' or letra == 'd' or letra == 'f' or letra == 'g' or
-        letra == 'h' or letra == 'j' or letra == 'k' or letra == 'l' or letra == 'm' or
-        letra == 'n' or letra == 'p' or letra == 'q' or letra == 'r' or letra == 's' or
-        letra == 't' or letra == 'v' or letra == 'w' or letra == 'x' or letra == 'y' or letra == 'z' or
-        letra == 'B' or letra == 'C' or letra == 'D' or letra == 'F' or letra == 'G' or
-        letra == 'H' or letra == 'J' or letra == 'K' or letra == 'L' or letra == 'M' or
-        letra == 'N' or letra == 'P' or letra == 'Q' or letra == 'R' or letra == 'S' or
-        letra == 'T' or letra == 'V' or letra == 'W' or letra == 'X' or letra == 'Y' or letra == 'Z'
-    )
-
+    vogais = "aeiouAEIOU"
+    consoantes = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+    
+    # O operador "in" verifica se a letra está dentro da string (vogais ou consoantes).
+    # O operador "or" retorna True se pelo menos uma das condições for verdadeira.
+    # Assim, o print mostra True se a letra for vogal OU consoante, e False caso contrário.
+    print(letra in vogais or letra in consoantes)
 
 def main():
-    # Entrada de dado e verifica o primeiro caractere
-    letra = input()[0]
+    letra = input().strip()[0]  # pega o primeiro caractere da entrada
     consoante_e_vogal(letra)
-
 
 if __name__ == "__main__":
     main()
