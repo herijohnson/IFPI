@@ -1,13 +1,8 @@
-def vogal(letra):
-    # Verifica se é vogal
+def consoante_e_vogal(letra):
+    # Verifica se é consoante ou vogal
     print(
         letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u' or
-        letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U'
-    )
-
-def consoante(letra):
-    # Verifica se é consoante (todas as letras do alfabeto menos as vogais)
-    print(
+        letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U' or
         letra == 'b' or letra == 'c' or letra == 'd' or letra == 'f' or letra == 'g' or
         letra == 'h' or letra == 'j' or letra == 'k' or letra == 'l' or letra == 'm' or
         letra == 'n' or letra == 'p' or letra == 'q' or letra == 'r' or letra == 's' or
@@ -21,10 +16,9 @@ def consoante(letra):
 
 def main():
     # Entrada de dado e verifica o primeiro caractere
-    letra = input("Digite uma letra: ")[0]
-    vogal(letra)
-    consoante(letra)
+    letra = input()[0]
+    consoante_e_vogal(letra)
 
 
 if __name__ == "__main__":
-    main().
+    main()
